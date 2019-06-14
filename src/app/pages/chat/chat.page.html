@@ -12,19 +12,52 @@
 <ion-list>
     <ion-item-sliding>
       <ion-item>
-        <ion-label>Item</ion-label>
+        <img src="../../../assets/icon/juan.png" slot="start" alt="">
+        <ion-label> Juan Diego Moreno</ion-label>
+        <ion-icon name="checkmark"slot="end" ></ion-icon>     
+         <ion-icon name="checkmark"slot="end" ></ion-icon>
+
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option (click)="conversacion(item)" >Unread</ion-item-option>
+        <ion-item-option [routerLink]="'/conversation'" routerDirection="conversation" >Chat</ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
-  
+  <br>
     <ion-item-sliding>
       <ion-item>
-        <ion-label>Item</ion-label>
+          <img src="../../../assets/icon/WhatsApp Image 2019-06-14 at 1.20.04 AM.jpeg" slot="start" alt="">
+        <ion-label>Sebastian Gaspar</ion-label>
+        <ion-icon name="checkmark-circle-outline"slot="end" ></ion-icon>
+
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option [routerLink]="'/conversation'" routerDirection="conversation">chat</ion-item-option>
+        <ion-item-option [routerLink]="'/conversation'" routerDirection="conversation">Chat</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <br>
+    <ion-item-sliding>
+      <ion-item>
+          <img src="../../../assets/icon/2.png" slot="start" alt="">
+        <ion-label>Evento Experimenta</ion-label>
+        <ion-icon name="checkmark-circle-outline"slot="end" ></ion-icon>
+
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option [routerLink]="'/conversation'" routerDirection="conversation">Davievento</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <br>
+    <ion-item-sliding>
+      <ion-item>
+          <img src="../../../assets/icon/banco-davivienda-logo-el-tesoro.png" slot="start" alt="">
+        <ion-label>Grupo davivienda</ion-label>
+        <ion-icon name="checkmark-circle-outline"slot="end" ></ion-icon>
+
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option [routerLink]="'/conversation'" routerDirection="conversation">Davigrupo</ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
