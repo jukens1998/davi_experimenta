@@ -10,7 +10,10 @@ const routes: Routes = [
   { path: 'details', loadChildren:'./pages/todo-details/todo-details.module#TodoDetailsPageModule', canActivate : [AuthGuard]},
   { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule', canActivate : [NoLoginGuard]  },
   { path: 'eventos', loadChildren: './pages/eventos/eventos.module#EventosPageModule', canActivate : [AuthGuard] },
-  { path: 'inicio', loadChildren: './pages/inicio/inicio.module#InicioPageModule' }
+  { path: 'inicio', loadChildren: './pages/inicio/inicio.module#InicioPageModule' },  { path: 'crowd', loadChildren: './pages/crowd/crowd.module#CrowdPageModule' },
+  { path: 'market', loadChildren: './pages/market/market.module#MarketPageModule' },
+  { path: 'chat', loadChildren: './pages/chat/chat.module#ChatPageModule' }
+
 
 ];
 

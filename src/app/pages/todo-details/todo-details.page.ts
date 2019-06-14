@@ -19,7 +19,7 @@ export class TodoDetailsPage implements OnInit {
     evento:'',
     host:'',
     lat:0,
-    lon:0
+    long:0
   };
   todoId=null;
   constructor(private geolocation:Geolocation, private loadingCtrl:LoadingController,private route: ActivatedRoute, private nav:NavController, private TodoService:TodoService, private loadingController:LoadingController) {
