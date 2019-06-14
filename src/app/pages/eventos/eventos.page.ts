@@ -36,6 +36,10 @@ export class EventosPage implements OnInit {
   mapRef = null;
   constructor(private geolocation: Geolocation, private loadingCtrl: LoadingController,private todoService: TodoService) { }
 
+  joinChat(){
+    
+  }
+
   ngOnInit() {
     this.todoService.getTodos().subscribe((todos) =>{
       this.todos = todos;
