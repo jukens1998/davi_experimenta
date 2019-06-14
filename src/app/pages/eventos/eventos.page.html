@@ -36,5 +36,9 @@
     <ion-label>Set Nickname</ion-label>
     <ion-input type="text" [(ngModel)]="nickname" placeholder="Nickname"></ion-input>
   </ion-item>
+<<<<<<< HEAD
   <ion-button expand="full"  [routerLink]="'/conversation'" routerDirection="conversation" > Join Chat as {{nickname}}</ion-button>
+=======
+  <ion-button expand="full" (click)="joinChat()" href="/conversation"> Join Chat as {{nickname}}</ion-button>
+>>>>>>> c22435667d2ad594ebbd86cbd5863e4ee72d0d73
 </ion-content>
