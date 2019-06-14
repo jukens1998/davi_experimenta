@@ -1,0 +1,7 @@
+{
+  "name": "davivienda",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

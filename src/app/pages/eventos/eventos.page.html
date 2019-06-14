@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button color="primary" menu="primerMenu"> </ion-menu-button>
+    </ion-buttons>
+    <ion-title>eventos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--mapa-->
+  <div id="map"></div>
+  <!--mapa-->
+
+  <ion-slides   class="image-slider" scrollbar="true" mode="ios" >
+    <ion-slide  *ngFor="let img of todos" (click)="eventoubi(img.lat,img.lon)">
+        <ion-card button="true"  >
+            <ion-item>
+              <ion-icon name="pin" slot="start"></ion-icon>
+              <ion-label>ion-item in a card, icon left, button right</ion-label>
+              <ion-button fill="outline" slot="end" (click)="clear()">Clear marker</ion-button>
+            </ion-item>
+          
+            <ion-card-content >
+                <img  src="../../../assets/icon/{{img.host}}" class="thumb-img">
+              This is content, without any paragraph or header tags, 
+              within an ion-card-content element.
+            </ion-card-content>
+          </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-item>
+    <ion-label>Set Nickname</ion-label>
+    <ion-input type="text" [(ngModel)]="nickname" placeholder="Nickname"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="joinChat()" > Join Chat ass {{nickname}}</ion-button>
+</ion-content>
